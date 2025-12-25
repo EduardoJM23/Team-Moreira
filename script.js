@@ -1,36 +1,36 @@
-// CARDÁPIO HAMBÚRGUER
-constante botão de menu = documento.obterElementoPorID("menuBtn");
-constante links de navegação = documento.obterElementoPorID("navLinks");
+// MENU HAMBURGUER
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
-botão de menu.adicionar ouvinte de eventos("clique", () => {
+menuBtn.addEventListener("click", () => {
     // Usa a classe 'active' definida no CSS de responsividade
-    links de navegação.lista de classes.alternar("ativo");
+    navLinks.classList.toggle("active");
 });
 
 // DETECTA O TIPO DE DISPOSITIVO (Pode manter o restante do seu código JS)
-função detectar dispositivo() {
+function detectDevice() {
 }
 
 // FUNÇÃO PARA ABRIR IMAGEM NO MODAL
-documento.querySelectorAll('.imagens img').para cada(imagem => {
-    imagem.adicionar ouvinte de eventos('clique', () => {
-        constante modal = documento.obterElementoPorID('modal');
-        constante modalImg = documento.obterElementoPorID('imgModal');
+document.querySelectorAll('.imagens img').forEach(img => {
+    img.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('imgModal');
 
-        modal.estilo.mostrar = "bloquear";
-        modalImg.src = imagem.src;
+        modal.style.display = "block";
+        modalImg.src = img.src;
     });
 });
 
-// MODAL FECHAR
-função fecharImagem() {
-    documento.obterElementoPorID('modal').estilo.mostrar = "nenhum";
+// FECHAR MODAL
+function fecharImagem() {
+    document.getElementById('modal').style.display = "none";
 }
 
 // Fechar clicando fora da imagem
-janela.adicionar ouvinte de eventos('clique', função(e) {
-    constante modal = documento.obterElementoPorID('modal');
-    se (e.alvo === modal) {
-        modal.estilo.mostrar = "nenhum";
+window.addEventListener('click', function(e) {
+    const modal = document.getElementById('modal');
+    if (e.target === modal) {
+        modal.style.display = "none";
     }
 });
