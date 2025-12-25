@@ -1,0 +1,138 @@
+    cor: #f0f0f0;
+}
+
+/* CARTÕES */
+.grade-artes{
+    mostrar:grade;
+    colunas-modelo-grade: repita(ajuste automático), mínimo máximo(250px, 1fr));/* Ajustado para melhor responsividade */
+    brecha: 20px;
+}
+
+.cartão{
+    fundo: rgba(40, 40, 40, 0,8);/* Fundo mais escuro e sólido para o cartão */
+    acolchoamento: 20px;
+    raio-da-borda: 10px;
+    alinhamento de texto:centro;
+    fronteira: 2pxsólido#0437df;
+    cor: #fff;
+}
+
+.cartão h3{
+    cor: #0437df;
+    margem inferior: 10px;
+}
+
+.TituloGaleria h3{
+cor: #0437df;
+alinhamento de texto:centro;
+}
+
+/* CONTATO */
+.links de contato um{
+    mostrar:bloquear;
+    margem: 10px 0;
+    cor: #0437df;
+    tamanho da fonte: 10px;
+    decoração de texto:nenhum;
+    transição:cor0,3s;
+    alinhamento de texto:centro;
+}
+
+.links de contato um:pairar{
+    cor: #000294;
+}
+
+.galeria{largura-máxima: 1200px;margem: 0auto;acolchoamento: 20px; }
+
+.imagens{
+  mostrar:grade;
+  colunas-modelo-grade: repita(4, 1fr);/* 4 colunas */
+  brecha: 10px;
+}
+
+.imagens imagem{
+  largura: 100%;
+  altura: 200px;
+  ajuste de objeto:cobrir;
+  mostrar:bloquear;
+  raio-da-borda: 6px;
+}
+
+/* RODAPÉ */
+rodapé{
+    fundo: #141414;/* Fundo escuro para combinar com a barra de navegação */
+    acolchoamento: 15px;
+    alinhamento de texto:centro;
+    cor: #f0f0f0;
+}
+
+/* RESPONSIVIDADE - MOBILE */
+@mídia(largura-máxima: 768px) {
+    .botão de menu{
+        mostrar:bloquear;/* Mostra o botão do menu */
+    }
+
+    .links de navegação{
+        mostrar:nenhum;/* Esconde a navegação principal por padrão */
+        flexão direcional:coluna;
+        largura: 100%;
+        posição:absoluto;
+        principal: 60px;/* Abaixo da barra de navegação */
+        esquerda: 0;
+        fundo: #141414;
+        acolchoamento: 10px 0;
+        índice z: 10;
+        alinhamento de texto:centro;
+    }
+
+    .links de navegação.ativo{/* Classe que será adicionada pelo JS */
+        mostrar:flexível;
+    }
+
+    .links de navegação li{
+        margem: 10px 0;
+    }
+    
+    .conteúdo de herói h1{
+        tamanho da fonte: 45px;
+    }
+    
+    .conteúdo de herói p{
+        tamanho da fonte: 18px;
+    }
+}
+
+/* MODAL DA GALERIA */
+.modal{
+    mostrar:nenhum;
+    posição:fixo;
+    índice z: 9999;
+    esquerda: 0;
+    principal: 0;
+    largura: 100%;
+    altura: 100%;
+    cor de fundo: rgba(0,0,0,0,8);
+    acolchoamento superior: 60px;
+    alinhamento de texto:centro;
+}
+
+.modal-conteudo{
+    largura-máxima: 80%;
+    altura máxima: 80%;
+    raio-da-borda: 10px;
+    sombra de caixa: 0 0 15px #000;
+}
+
+.fechar{
+    posição:absoluto;
+    principal: 15px;
+    certo: 35px;
+    cor:branco;
+    tamanho da fonte: 40px;
+    peso da fonte:audacioso;
+    cursor:ponteiro;
+}
+
+.imagens imagem{
+    cursor:ponteiro;/* mãozinha para clicar */
+}
