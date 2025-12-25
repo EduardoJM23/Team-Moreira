@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<cabeça>
+    <meta conjunto de caracteres="UTF-8"/>
+    <meta nome="janela de visualização"contente="largura=largura-do-dispositivo, escala-inicial=1.0"/>
+    <título>Equipe Moreira</título>
+    <link rel="folha de estilo"href="estilo.css"/> 
+</cabeça>
+<corpo>
+
+    <cabeçalho>
+        <navegação aula="barra de navegação">
+            <div aula="logotipo">Equipe Moreira</div>
+            <botão aula="botão de menu"eu ia="botão de menu">☰</botão>
+            <ul aula="links de navegação"eu ia="links de navegação">
+                <li><um href="#história">História</um></li>
+                <li><um href="#projetos">Projetos</um></li>
+                <li><um href="#artes">Artes Marciais</um></li>
+                <li><um href="#contato">Contato</um></li>
+            </ul>
+        </navegação>
+    </cabeçalho>
+
+    <div aula="sobreposição"> 
+
+        <seção aula="herói">
+            <div aula="conteúdo de herói">
+                <h1>EQUIPE MOREIRA</h1>
+                <p>Treine, evolua e supere seus limites.</p>
+            </div>
+        </seção>
+
+        <seção aula="seção"eu ia="história">
+            <h2>História da Academia</h2>
+            <p>
+                Aqui você coloca a história da academia, como surgiu, valores,
+                ea.
+            </p>
+        </seção>
+
+        <seção aula="seção"eu ia="projéteis">
+            <h2>Projeto Social</h2>
+            <p>
+                Espaço para explicar projetos sociais.
+            </p>
+        </seção>
+
+        <seção aula="seção"eu ia="artes">
+            <h2>Artes Marciais</h2>
+
+            <div aula="grade-artes">
+                <div aula="cartão">
+                    <h3>Boxe Olímpico</h3>
+                    <p>Aulas para iniciantes e avançados.</p>
+                </div>
+
+                <div aula="cartão">
+                    <h3>Kickboxing</h3>
+                    <p>Técnica, condicionamento e competição.</p>
+                </div>
+                </div>
+        </seção>
+
+        <seção aula="seção">
+                <h2>Galeria</h2>
+            <div aula="galeria">
+                <div aula="imagens"> <!---caixa principal da galeria --->
+                    <imagem src="/Imagens/caique-sub17.jpg">
+                    <imagem src="/Imagens/carla.jpg">
+                    <imagem src="/Imagens/hugo.jpg">
+                    <imagem src="/Imagens/hugo2.jpg">
+                    <imagem src="/Imagens/pv.jpg">
+                    <imagem src="/Imagens/pv2.jpg">
+                    <imagem src="/Imagens/wrk.jpg">
+                    <imagem src="/Imagens/wgp2.jpg">
+                    <imagem src="/Imagens/wgp.jpg">
+                    <imagem src="/Imagens/rafael.jpg">
+                    <imagem src="/Imagens/Imagem do WhatsApp de 2025-11-23 à(s) 10.24.08_92e66420.jpg">
+                </div>
+                <!-- Modal da Galeria -->
+                <div eu ia="modal"aula="modal">
+                    <extensão aula="fechar"onclick="fecharImagem()">×</extensão>
+                    <imagem eu ia="imgModal"aula="modal-conteudo">
+                </div>
+            </div>
+        </seção>
+
+        <seção aula="seção"eu ia="contato">
+            <h2>Contato</h2>
+            <div aula="links de contato">
+                <um alvo="_em branco"href="https://www.instagram.com/teammoreiraoficial">Instagram</um>
+                <um href="tel.:+5500000000000">Telefone</um>
+                <um alvo="_em branco"href="https://wa.me/00000000000">WhatsApp</um>
+            </div>
+        </seção>
+
+        <rodapé>
+            <p>© 2025 Team Moreira - Todos os direitos reservados.</p>
+        </rodapé>
+
+    </div> <roteiro src="script.js"></roteiro>
+</corpo>
+</html>
